@@ -1,0 +1,58 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": [
+    "./AGENTS.md"
+  ],
+  "permission": {
+    "bash": {
+      "*": "ask",
+      "go build *": "allow",
+      "go vet *": "allow",
+      "go test *": "allow",
+      "go run *": "allow",
+      "gofmt *": "allow",
+      "gopls *": "allow",
+      "rm -rf *": "deny"
+    },
+    "edit": "allow"
+  },
+  "tools": {
+    "bash": true,
+    "edit": true,
+    "glob": true,
+    "grep": true,
+    "read": true,
+    "todoread": true,
+    "todowrite": true,
+    "write": true
+  },
+  "formatter": {
+    "gofmt": {
+      "command": [
+        "gofmt",
+        "-w"
+      ],
+      "extensions": [
+        ".go"
+      ]
+    }
+  },
+  "lsp": {
+    "gopls": {
+      "command": [
+        "gopls",
+        "serve"
+      ],
+      "extensions": [
+        ".go"
+      ]
+    }
+  },
+  "skills": {
+    "paths": [
+      "./.opencode/skills/go-template"
+    ]
+  },
+  "share": "disabled",
+  "snapshot": true
+}

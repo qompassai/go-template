@@ -5,5 +5,5 @@ package main
 import "fmt"
 
 func main() {
-    fmt.Println("Hello from the Qompass AI Go template.")
+	fmt.Println("Hello from the Qompass AI Go template.")
 }

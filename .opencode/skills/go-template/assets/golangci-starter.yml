@@ -1,0 +1,12 @@
+# golangci-starter.yml — optional stricter lint for go-template projects.
+# Copy to the project root as .golangci.yml to use. Requires golangci-lint:
+# https://golangci-lint.run/welcome/install/
+linters:
+  enable:
+    - govet
+    - gofmt
+    - ineffassign
+    - staticcheck
+    - unused
+run:
+  timeout: 5m

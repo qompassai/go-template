@@ -1,3 +1,5 @@
+> **ARCHIVED (D-831, 2026-11-03):** this template has been folded into [qompassai/go](https://github.com/qompassai/go/tree/main/template) — new projects start from there. This repo is kept read-only for history.
+
 <!-- qompassai/go-template/README.md -->
 <!-- Replace Go, Template for Qompass AI Go projects. and go when you instantiate this template. -->
 
